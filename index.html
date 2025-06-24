@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Satisfaction Survey: Executive Summary</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: CriticalOps Brand Palette (Bright Blue: RGB 0, 157, 210; Cool Gray: RGB 146, 140, 140; PMS Black: RGB 0, 0, 0; White: RGB 255, 255, 255) -->
+    <!-- Application Structure Plan: This is a minimalist "splash page" designed for quick, high-level executive consumption. The information architecture prioritizes a single, impactful overall score at the center, followed by concise summaries of key strengths presented as digestible cards. A clear call to action (simulated) is included for deeper engagement. This structure was chosen to provide immediate understanding and a positive overview, consistent with an executive summary's purpose, without overwhelming the user with detail on a first glance. -->
+    <!-- Visualization & Content Choices: The core "Overall Satisfaction Score" is presented as a large, bold number for immediate impact. Key findings are summarized in bullet points within small, visually distinct cards, using text to convey qualitative insights from the survey questions. Colors adhere strictly to the CriticalOps brand for professionalism. No charts or complex interactive elements are used, maintaining the "splash page" brevity. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        :root {
+            --color-primary-blue: rgb(0, 157, 210);
+            --color-cool-gray: rgb(146, 140, 140);
+            --color-pms-black: rgb(0, 0, 0);
+            --color-white: rgb(255, 255, 255);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-white);
+            color: var(--color-pms-black);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-white py-4 shadow-sm">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <h1 class="text-xl font-bold" style="color: var(--color-pms-black);">Customer Survey</h1>
+            <!-- Logo: CriticalOps Blue.png -->
+            <div class="flex items-center">
+                <img src="https://placehold.co/150x40/009DD2/000000?text=CriticalOps%20Logo" alt="CriticalOps Logo" class="h-8 md:h-10">
+                <!-- Using a placeholder image for the logo as the direct image URL from conversation history cannot be used directly in new generation code. -->
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center py-12">
+        <div class="container text-center">
+            <h2 class="text-5xl md:text-6xl font-extrabold mb-4" style="color: var(--color-pms-black);">Customer Satisfaction Survey</h2>
+            <p class="text-xl md:text-2xl font-medium mb-12" style="color: var(--color-cool-gray);">Executive Summary: Q2 2024 Results</p>
+
+            <!-- Overall Score Highlight -->
+            <div class="bg-white p-8 md:p-12 rounded-lg shadow-xl inline-block mb-16" style="border: 2px solid var(--color-primary-blue);">
+                <p class="text-2xl font-semibold" style="color: var(--color-pms-black);">Overall Satisfaction Score</p>
+                <p class="text-7xl md:text-8xl font-extrabold mt-4" style="color: var(--color-primary-blue);">9.3<span class="text-4xl text-gray-400">/10</span></p>
+                <p class="text-lg text-gray-500 mt-2" style="color: var(--color-cool-gray);">Excellent Performance & Partnership</p>
+            </div>
+
+            <!-- Key Highlights -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white p-6 rounded-lg shadow-md border-l-4" style="border-color: var(--color-primary-blue);">
+                    <h3 class="font-bold text-xl mb-2" style="color: var(--color-pms-black);">Service & Reliability</h3>
+                    <p class="text-gray-700 text-sm" style="color: var(--color-cool-gray);">Customers report high satisfaction with data center uptime and minimized operational disruptions.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border-l-4" style="border-color: var(--color-primary-blue);">
+                    <h3 class="font-bold text-xl mb-2" style="color: var(--color-pms-black);">Communication & Support</h3>
+                    <p class="text-gray-700 text-sm" style="color: var(--color-cool-gray);">Proactive engagement and strong responsiveness from our teams are consistently highlighted.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border-l-4" style="border-color: var(--color-primary-blue);">
+                    <h3 class="font-bold text-xl mb-2" style="color: var(--color-pms-black);">Operational Alignment</h3>
+                    <p class="text-gray-700 text-sm" style="color: var(--color-cool-gray);">Positive feedback on adherence to policies, procedures, and alignment with corporate values.</p>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md border-l-4" style="border-color: var(--color-primary-blue);">
+                    <h3 class="font-bold text-xl mb-2" style="color: var(--color-pms-black);">Reporting & Compliance</h3>
+                    <p class="text-gray-700 text-sm" style="color: var(--color-cool-gray);">Clarity, completeness, and timeliness of operational reports meet and exceed expectations.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border-l-4" style="border-color: var(--color-primary-blue);">
+                    <h3 class="font-bold text-xl mb-2" style="color: var(--color-pms-black);">Facility Quality</h3>
+                    <p class="text-gray-700 text-sm" style="color: var(--color-cool-gray);">High marks for building operations, appearance, and overall professional upkeep of our facilities.</p>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md border-l-4" style="border-color: var(--color-primary-blue);">
+                    <h3 class="font-bold text-xl mb-2" style="color: var(--color-pms-black);">Cross-Functional Teamwork</h3>
+                    <p class="text-gray-700 text-sm" style="color: var(--color-cool-gray);">Customers appreciate seamless coordination and our team's focus on integrating with their internal processes.</p>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <button class="px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 shadow-md" 
+                    style="background-color: var(--color-primary-blue); color: var(--color-white); hover:opacity:0.9;">
+                View Full Report
+            </button>
+        </div>
+    </main>
+
+    <!-- Footer (Optional, but good for branding) -->
+    <footer class="bg-gray-100 py-4 text-center text-sm" style="background-color: rgba(146, 140, 140, 0.1); color: var(--color-cool-gray);">
+        &copy; 2024 Skybox CriticalOps. All rights reserved.
+    </footer>
+</body>
+</html>
